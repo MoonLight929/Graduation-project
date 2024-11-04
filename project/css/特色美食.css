@@ -1,0 +1,533 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* banner内容 */
+.banner {
+    background-image: url("../img/foot/丝娃娃.webp");
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(42, 42, 42, 0.5);
+    user-select: none;
+    /* position: absolute; */
+}
+
+.bg {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(42, 42, 42, 0.5);
+    position: absolute;
+}
+
+/* 搜索框 */
+.search {
+    display: flex;
+    width: 900px;
+    height: 50px;
+    line-height: 50px;
+    margin: 30px auto;
+}
+
+.search input {
+    flex: 1;
+    height: 50px;
+    line-height: 50px;
+    /* padding和border的值就不会在影响元素的宽高 */
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 0 20px;
+    font-size: 20px;
+    box-shadow: 0 0 4px #c4c4c4;
+}
+
+.search button {
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 30px;
+    border: none;
+    box-sizing: border-box;
+    background-color: #1fab89;
+    font-size: 20px;
+    color: #eeeeee;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 0 4px #c4c4c4;
+}
+
+.big-nav {
+    background-color: white;
+}
+
+.text {
+    width: 500px;
+    color: white;
+    position: relative;
+    top: 100px;
+    left: 140px;
+    line-height: 40px;
+    user-select: none;
+}
+
+.text h1 {
+    line-height: 60px;
+}
+
+.text p {
+    width: 450px;
+}
+
+.nr {
+    width: 100%;
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+/* 总结 */
+.conclude {
+    text-align: center;
+    line-height: 30px;
+}
+
+.classify {
+    width: 700px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot-classify {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    overflow: hidden;
+    /* display: inline-block; */
+}
+
+.foot-img {
+    transition: 0.6s;
+}
+
+.black {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: rgba(42, 42, 42, 0.5);
+    position: absolute;
+}
+
+.foot-classify img {
+    width: 100px;
+    height: 100px;
+}
+
+.foot-img:hover {
+    transform: scale(1.2);
+}
+
+.foot-title {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    color: white;
+    /* inset: 30px; */
+    font-size: 18px;
+    display: flex;
+    /* justify-items: center; */
+    align-items: center;
+    left: 23px;
+}
+
+/* 按地区分类 */
+/* 选项卡 */
+.area-btn {
+    display: flex;
+    /* align-items: flex-end;
+    height: 40px; */
+}
+
+.area-btn button {
+    border: none;
+    width: 100px;
+    height: 40px;
+    outline: none;
+    cursor: pointer;
+}
+
+.area-btn button:hover {
+    background-color: rgb(221, 221, 221);
+}
+
+/* 选项卡对应内容 */
+.area-text {
+    /* width: 1100px; */
+    height: 400px;
+    background-color: aliceblue;
+}
+
+.area-text {
+    display: none;
+}
+
+.area-text:first-child {
+    display: block;
+}
+
+/* 广告banner */
+.ads {
+    width: 100%;
+    height: 200px;
+    /* background-color: rgb(0, 0, 0); */
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin: 10px 0;
+}
+
+.ads-top {
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+}
+
+.ads img {
+    width: 100%;
+    height: auto;
+}
+
+.ads-text {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ads-text h3 {
+    line-height: 50px;
+}
+
+
+
+
+
+
+
+
+/* 菜品top列表 */
+.rank {
+    height: auto;
+    padding: 5px;
+}
+
+.rank-content {
+    display: flex;
+    /* 确保了子项之间以及子项与容器边缘之间有均等的空间 */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rank-row1 {
+    width: 550px;
+    height: 200px;
+    /* background-color: aquamarine; */
+    margin: 10px 0;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    transition: 1s;
+}
+
+.rank-img {
+    width: 200px;
+    height: 100%;
+    /* background-color: #1d7a6c; */
+    overflow: hidden;
+}
+
+.rank-img img {
+    width: 200px;
+    height: 100%;
+    transition: 1s;
+}
+
+.rank-num {
+    background-color: rgb(208, 92, 92);
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: whitesmoke;
+    position: absolute;
+    z-index: 1;
+}
+
+.rank-text {
+    width: 350px;
+    height: 200px;
+    /* background-color: #1d7a6c; */
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    float: left;
+}
+
+/* .rank-text p{
+    font-size: 14px;
+} */
+.rank-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: orange;
+}
+
+.rank-nr {
+    padding: 5px 30px;
+    color: grey;
+}
+
+.rank-text button {
+    font-size: 12px;
+    background: linear-gradient(to right, rgb(255, 145, 0), rgb(255, 66, 3));
+    border: none;
+    color: white;
+    padding: 8px 16px;
+}
+
+.rank-text button:hover {
+    background: linear-gradient(to right, rgb(255, 66, 3), rgb(255, 145, 0));
+}
+
+.rank-row1:hover .rank-img img {
+    transform: scale(1.08);
+    transition: 1s;
+}
+
+.rank-row1:hover {
+    background-color: rgb(239, 239, 239);
+    transition: 1s;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* 热门评论 */
+.evaluation {
+    height: auto;
+    /* background-color: blanchedalmond; */
+    /* text-align: center; */
+}
+
+.eva {
+    height: 400px;
+    /* background-color: rgb(242, 242, 242); */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border: 1px solid grey;
+    margin: 10px;
+}
+
+.left-box {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-box li {
+    /* border: 1px solid red; */
+    padding: 15px 0;
+    line-height: 50px;
+    color: #aaa;
+    cursor: pointer;
+    /* 过渡效果 */
+    transition: 0.2s ease-out;
+    list-style: none;
+    font-size: 1.1vw;
+    line-height: 50px;
+}
+
+.people {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-right: 15px;
+    font-size: 30px;
+    float: left;
+    overflow: hidden;
+}
+
+.people img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.left-box li:hover .people img {
+    transform: scale(1.1);
+}
+
+/* li选中状态 */
+.left-box li.active {
+    color: #333;
+}
+
+.border {
+    height: 305px;
+    width: 1px;
+    background-color: #1d7a6c;
+}
+
+.border .line {
+    width: 6px;
+    height: 54px;
+    background-color: rgb(18, 85, 32);
+    margin-left: -2px;
+    margin-top: 35px;
+    transition: 0.4s ease-in-out;
+}
+
+/* 分别设置各个红色小进度条的垂直位置 */
+.border .line1 {
+    margin-top: 5px;
+}
+
+.border .line2 {
+    margin-top: 80px;
+}
+
+.border .line3 {
+    margin-top: 165px;
+}
+
+.border .line4 {
+    margin-top: 240px;
+}
+
+/* 右侧内容 */
+.right-box {
+    /* 子级元素占满整个多余部分而不进行挤压 */
+    flex: 1;
+    height: 100%;
+    position: relative;
+}
+
+.rb-content {
+    height: 65%;
+}
+
+.right-box .rb {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* 项目将沿着垂直方向排列，类似于一个列 */
+    flex-direction: column;
+    color: #333;
+    position: absolute;
+    /* 默认隐藏 */
+    top: -350px;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    padding: 0 30px;
+}
+
+.rb p {
+    font-size: 1vw;
+}
+
+.rb hr {
+    width: 80%;
+    height: 3px;
+    background-color: rgb(96, 125, 148);
+    margin-top: 0px;
+}
+
+.right-box button {
+    border: none;
+    background-color: rgb(183, 224, 255);
+    color: rgb(42, 75, 101);
+    padding: 3px 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-right: 10px;
+    transition: 1s;
+}
+
+.right-box button:hover {
+    background-color: rgb(165, 203, 232);
+    color: rgb(27, 58, 82);
+    transition: 1s;
+}
+
+.rb .good {
+    height: 20px;
+    margin-top: -5px;
+}
+
+/* 右侧内容选中状态 */
+.right-box .rb.active {
+    top: 0;
+    opacity: 1;
+}
+
+/* 食物banner */
+.foot-banner {
+    /* width: 1236px; */
+    height: 200px;
+    overflow: hidden;
+}
+
+.foot-banner ul {
+    width: 200%;
+    height: 200px;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    animation-name: test;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.foot-banner ul li img {
+    border-radius: 15px;
+    border: 3px solid white;
+}
+
+.foot-banner:hover ul {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.foot-banner ul li {
+    float: left;
+}
+
+.foot-banner ul li img {
+    width: 250px;
+    height: 200px;
+}
+
+@keyframes test {
+    from {
+        transform: translateX(0)
+    }
+
+    to {
+        transform: translateX(-1236px)
+    }
+}

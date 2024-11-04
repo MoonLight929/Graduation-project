@@ -1,0 +1,151 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    /* background-image: url('../img/背景2.jpg'); */
+    /* 背景图片不重复 */
+    background-repeat: no-repeat;
+    /* 背景图片位置居中 */
+    background-position: center;
+    /* 背景图片位置固定 */
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    overflow: hidden;
+}
+
+/* 导航栏 */
+.nav a {
+    color: whitesmoke;
+    display: inline-block;
+    height: 100%;
+}
+
+.nav a:hover {
+    color: black;
+    font-size: 16px;
+}
+
+.navbar-header span {
+    background-color: white;
+}
+/* 鼠标监听移动 */
+#navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
+    z-index: 9999;
+}
+
+#navbar.active {
+    top: -50px;
+}
+
+/* 底部 版权信息 */
+.bottom {
+    padding: 20px 0px;
+    background-color: lightgrey;
+}
+
+.bottom h5 {
+    margin-top: 15px;
+    font-weight: bolder;
+}
+
+.bottom p {
+    font-size: 13px;
+    color: rgb(60, 60, 60);
+}
+
+.bottom img {
+    padding: 3px;
+    background-color: white;
+}
+
+.bottom2 {
+    line-height: 50px;
+    text-align: center;
+    color: whitesmoke;
+    background-color: rgb(105, 105, 105);
+}
+
+/* 页面滚动 */
+.flag {
+    opacity: 0;
+    filter: blur(3px);
+    transition: all .6s;
+    transform: translateX(-50%);
+}
+
+.pageActive {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+}
+
+/* 加载页 */
+.loading {
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    z-index: 100000000;
+    transition: 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading svg {
+    width: 5rem;
+    margin-bottom: 2rem;
+    overflow: visible;
+    transition: 0.3s ease;
+}
+
+.loading svg circle {
+    fill: none;
+    stroke: black;
+    stroke-width: 12;
+    stroke-dasharray: 160;
+    stroke-dashoffset: 160;
+    transform-origin: center;
+    animation: circle_rotate 3s ease-in infinite;
+}
+
+@keyframes circle_rotate {
+    0% {
+        transform: rotate(0deg);
+        stroke-dashoffset: 160;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        stroke-dashoffset: -160;
+    }
+}
+
+.loading p {
+    font-size: 2rem;
+    color: black;
+    font-weight: 900;
+    transition: 0.3s ease;
+}
+
+.loading_out {
+    transform: translateY(100%);
+}
+
+.loading_out svg,
+.loading_out p {
+    opacity: 0;
+}

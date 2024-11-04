@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/通用.css">
+    <link rel="stylesheet" href="./css/首页.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <title>首页</title>
+</head>
+
+<body>
+    <!-- 跳转页面 -->
+    <div class="loading">
+        <svg viewbox="0 0 50 50">
+            <circle r='25' cx='25' cy='25'></circle>
+        </svg>
+        <p>Loading</p>
+    </div>
+    <!-- 导航栏 -->
+    <nav style="background: #0F0F0F;" id="navbar">
+        <div class="container">
+            <!-- logo -->
+            <div class="navbar-header ">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- logo -->
+                <a href="./welcome.html"><img src="./img/logo.png" title="logo"></a>
+            </div>
+
+            <!-- 内容区域 -->
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <ul class="nav navbar-nav" id="example-navbar-collapse">
+                    <li><a href="./首页.html">首页</a></li>
+                    <li><a href="./热门景点.html">热门景点</a></li>
+                    <li><a href="./特色美食.html">特色美食</a></li>
+                    <li><a href="./住宿推荐.html">住宿推荐</a></li>
+                    <li><a href="./旅游线路.html">旅游线路</a></li>
+                    <li><a href="./文化体验.html">文化体验</a></li>
+                    <li><a href="./当地活动.html">当地活动</a></li>
+                    <li><a href="./官方资讯.html">官方资讯</a></li>
+                    <li><a href="./游客服务.html">游客服务</a></li>
+                    <li><a href="./登录注册.html">登录 | 注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 轮播图 -->
+    <div class="banner">
+        <div class="carousel slide" id="Mycarousel" data-ride="carousel" data-interval="3000">
+            <!-- 指标区域 -->
+            <div class="carousel-indicators">
+                <li data-target="Mycarousel" class="active"></li>
+                <li data-target="Mycarousel"></li>
+                <li data-target="Mycarousel"></li>
+            </div>
+            <!-- 图片区域 -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="./img/banner/岑巩.jpg" class="photo">
+                </div>
+                <div class="item">
+                    <img src="./img/banner/千户苗寨.jpg" class="photo">
+                </div>
+                <div class="item">
+                    <img src="./img/banner/羊肉粉.jpg" class="photo">
+                </div>
+            </div>
+            <!-- 导航区域 -->
+            <a href="#Mycarousel" class="carousel-control left" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a href="#Mycarousel" class="carousel-control right" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+    <!-- 分割 热门地点 -->
+    <br>
+    <div class="bot">
+        <span class="line"></span>
+        <span class="title">热门地点</span>
+        <span class="line"></span>
+        <p>Recommended popular attractions</p>
+    </div>
+    <div class="container place">
+        <!-- 黄果树 -->
+        <div class="row">
+            <div class="place-left col-lg-7 flag">
+                <img src="./img/nr-place/黄果树.png" class="img-responsive">
+            </div>
+            <div class="col-lg-5">
+                <h1 class="flag">黄果树瀑布</h1>
+                <p class="flag">作为亚洲最大的瀑布，黄果树瀑布以其雄伟壮观、水势磅礴著称，是贵州乃至中国的标志性景观之一。</p>
+                <p class="flag">四季景色各异，夏季水量充沛，瀑布如丝如缕，蔚为壮观；春秋时节，瀑布周围绿意盎然，清新宜人；冬季则可能形成冰瀑，别有一番风味。</p>
+                <p class="flag">推荐活动：徒步探索瀑布群，体验水帘洞内的奇妙世界，观看《天星桥》自然奇观。</p>
+                <button class="flag">了解更多→</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5">
+                <h1 class="flag">西江千户苗寨</h1>
+                <p class="flag">世界上最大的苗族聚居村寨，保存着完整的苗族“原始生态”文化，被誉为“中国苗都”。</p>
+                <p class="flag">错落有致的吊脚楼群，夜晚万家灯火，宛如星空落入凡间；丰富的苗族文化体验，如苗绣、银饰制作、苗歌苗舞表演等。</p>
+                <p class="flag">推荐活动：参与苗族风情体验活动，品尝苗家特色美食，夜游苗寨感受灯火阑珊的浪漫。</p>
+                <button class="flag">了解更多→</button>
+            </div>
+            <div class="place-left col-lg-7 flag">
+                <img src="./img/nr-place/千户苗寨.png" class="img-responsive">
+            </div>
+        </div>
+    </div>
+    <!-- 分割 经典美食 -->
+    <div class="bot flag">
+        <span class="line"></span>
+        <span class="title">经典美食</span>
+        <span class="line"></span>
+        <p>Classic food recommendations</p>
+    </div>
+    <div class="eat container">
+        <div class="row flag">
+            <!-- 酸汤鱼 -->
+            <div class="col-lg-6">
+                <div class="col-lg-4 eat-left">
+                    <img src="./img/nr-eat/酸汤鱼.png" class="img-responsive">
+                </div>
+                <div class="col-lg-8">
+                    <h3>贵州酸汤鱼</h3>
+                    <p>采用苗族秘制酸汤，搭配当地新鲜鱼类，酸辣可口，开胃解腻，是品尝贵州美食不可错过的首选。</p>
+                    <a href="#"> >>查看更多</a>
+                </div>
+            </div>
+            <!-- 辣子鸡 -->
+            <div class="col-lg-6">
+                <div class="col-lg-4 eat-left">
+                    <img src="./img/nr-eat/辣子鸡.png" class="img-responsive">
+                </div>
+                <div class="col-lg-8">
+                    <h3>贵州辣子鸡</h3>
+                    <p>上等土鸡与大量干辣椒、花椒等香料慢火炒制而成，辣而不燥，香酥可口，是贵州人无辣不欢的代表性菜肴</p>
+                    <a href="#"> >>查看更多</a>
+                </div>
+            </div>
+        </div>
+        <div class="row flag">
+            <!-- 丝娃娃 -->
+            <div class="col-lg-6">
+                <div class="col-lg-4 eat-left">
+                    <img src="./img/nr-eat/丝娃娃.png" class="img-responsive">
+                </div>
+                <div class="col-lg-8">
+                    <h3>丝娃娃</h3>
+                    <p>以大米面粉烙成的薄饼包裹各种时令蔬菜，再蘸上特制酱料食用，清爽开胃，是夏日解暑的佳品。</p>
+                    <a href="#"> >>查看更多</a>
+                </div>
+            </div>
+            <!-- 羊肉粉 -->
+            <div class="col-lg-6">
+                <div class="col-lg-4 eat-left">
+                    <img src="./img/nr-eat/羊肉粉.png" class="img-responsive">
+                </div>
+                <div class="col-lg-8">
+                    <h3>羊肉粉</h3>
+                    <p>选用上等羊肉熬制高汤，搭配手工制作的米粉，再加入香菜、葱花等提味，汤鲜味美，粉质细腻。</p>
+                    <a href="#"> >>查看更多</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 分割 传统文化 -->
+    <div class="bot flag">
+        <span class="line"></span>
+        <span class="title">传统文化</span>
+        <span class="line"></span>
+        <p>Traditional culture of Guizhou</p>
+    </div>
+    <!-- 传统文化 -->
+    <div class="container">
+        <div class="card flag">
+            <div class="content">
+                <h3>侗族大歌</h3>
+                <p>侗族人民世代相传的一种多声部、无指挥、无伴奏的民间合唱形式，被誉为“天籁之音”。其结构严密而精美，歌词押韵，曲调优美，意蕴深刻，是侗族文化的瑰宝。</p>
+                <button>查看更多</button>
+            </div>
+        </div>
+        <div class="card flag">
+            <div class="content">
+                <h3>水族马尾绣</h3>
+                <p>水族妇女世代传承的一种古老刺绣技艺，以马尾作为重要原材料，绣品古色古香、华美精致，具有结实耐用的特点。不仅体现了水族人民的智慧和创造力，也是水族文化的重要载体。</p>
+                <button>查看更多</button>
+            </div>
+        </div>
+        <div class="card flag">
+            <div class="content">
+                <h3>苗族芦笙舞</h3>
+                <p>贵州苗族地区最具代表性的民间舞蹈之一，以芦笙为伴奏乐器，舞蹈动作与音乐紧密结合，在贵州的苗族聚居区广泛流传，是苗族文化的重要组成部分。</p>
+                <button>查看更多</button>
+            </div>
+        </div>
+        <div class="card flag">
+            <div class="content">
+                <h3>苗绣</h3>
+                <p>苗绣，简称苗绣，是苗族为主体的各民族绣娘，宗法自然，坚守本真，用脑力和手工挑绣的用于苗族传统穿戴和日常生活习俗的传统技艺和刺绣作品的总称。</p>
+                <button>查看更多</button>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+
+    <!-- 分割 其他 -->
+    <div class="bot flag">
+        <span class="line"></span>
+        <span class="title">其他信息</span>
+        <span class="line"></span>
+        <p>Other relevant information</p>
+    </div>
+
+
+    <!-- 其他内容 -->
+    <div class="container">
+        <div id="box">
+            <div id="btns">
+                <button class="act">热门酒店</button>
+                <button class="an">旅游攻略</button>
+                <button class="an">官方资讯</button>
+            </div>
+            <div id="tabBox">
+                <div class="activeDiv">
+                    <nav class="hotel flag">
+                        <nav class="hotel-img">
+                            <img src="./img/nr-others/半居酒店.jpg">
+                        </nav>
+                        <nav class="hotel-nr">
+                            <h3>微澜·半居酒店</h3>
+                            <p>金秋特惠+微澜 静谧大床房+1晚</p>
+                            <p>1张1.5米大床 18-20m² 2人入住</p>
+                            <h4>￥193</h4>
+                            <a href="#">了解详情</a>
+                        </nav>
+                    </nav>
+                    <nav class="hotel flag">
+                        <nav class="hotel-img">
+                            <img src="./img/nr-others/夕宿酒店.jpg">
+                        </nav>
+                        <nav class="hotel-nr">
+                            <h3>夕宿·莱晨酒店</h3>
+                            <p>红豆相思 时光优享大床房</p>
+                            <p>1张2.0米大床 20-30m² 2人入住 有窗</p>
+                            <h4>￥127</h4>
+                            <a href="#">了解详情</a>
+                        </nav>
+                    </nav>
+                    <span class="more">点击查看更多>></span>
+                </div>
+                <div class="allDiv">
+                    <nav class="container tips">
+                        <nav class="tips-nav">
+                            <nav class="tip col-lg-2">
+                                <img src="./img/nr-tips/1.jpg">
+                                <h4>3-5月贵州旅游|5天行程这么玩！</h4>
+                                <a href="#">查看详情</a>
+                            </nav>
+                        </nav>
+                        <nav class="tips-nav">
+                            <nav class="tip col-lg-2">
+                                <img src="./img/nr-tips/2.jpg">
+                                <h4>贵州纯玩|定点拍照+接送+景区讲解√</h4>
+                                <a href="#">查看详情</a>
+                            </nav>
+                        </nav>
+                        <nav class="tips-nav">
+                            <nav class="tip col-lg-2">
+                                <img src="./img/nr-tips/3.jpg">
+                                <h4>贵州精致旅游|小团6天游纯玩保姆级攻略</h4>
+                                <a href="#">查看详情</a>
+                            </nav>
+                        </nav>
+                        <nav class="tips-nav">
+                            <nav class="tip col-lg-2">
+                                <img src="./img/nr-tips/4.jpg">
+                                <h4>夏日清凉~贵州5日纯玩|吃喝玩乐全包</h4>
+                                <a href="#">查看详情</a>
+                            </nav>
+                        </nav>
+                        <nav class="tips-nav">
+                            <nav class="tip col-lg-2">
+                                <img src="./img/nr-tips/5.jpg">
+                                <h4>贵州|来一场心与灵魂高度契合的旅行</h4>
+                                <a href="#">查看详情</a>
+                            </nav>
+                        </nav>
+                    </nav>
+                </div>
+                <div class="allDiv">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 底部 版权信息 -->
+    <div class="bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h5>按目的搜索</h5>
+                            <p>观光 | 美食 | 购物 | 住宿 | 交通 </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <h5>查询交通路线</h5>
+                            <p>需要查询贵州各地区路线的可点击这里</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h5>产品</h5>
+                            <p>在线客服 | 在线机器人 | 呼叫中心 | 数据大屏</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <h5>帮助</h5>
+                            <p>开发指南 | 下载中心 | 帮助中心 | 更新日志 | 旅游中心 | 个人动态</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h5>联系我们</h5>
+                            <p>电话:4003-000-929 </p>
+                            <p>邮箱:help@qianxing.com</p>
+                            <p>商务合作:hezuo@qianxing.com</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <h5>加入我们</h5>
+                            <p>渠道合作</p>
+                            <p>招贤纳士</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="col-lg-6">
+                        <h5>公众号</h5>
+                        <img src="./img/bottom/黔行天下.jpg">
+                    </div>
+                    <div class="col-lg-6">
+                        <h5>微信联系</h5>
+                        <img src="./img/bottom/微信联系.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom2">
+        <p> @2024 张威13787144292-版权所有</p>
+    </div>
+    <!-- <div onclick="topFunction()" id="myBtn">top</div> -->
+    <script src="./js/首页.js"></script>
+    <script src="./js/通用.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登陆注册</title>
+		<link rel="stylesheet" href="./css/通用.css">
+		<link rel="stylesheet" href="css/登陆注册.css" />
+	</head>
+	<body>
+		<img src="./img/个人/背景.png" class="beijing" />
+		<div class="beijing"></div>
+		<div class="deng">
+			<div class="neirong">
+				<img src="./img/个人/注册.png"/>
+				<span>旅客，请在这里注册</span>
+			</div>
+			<div class="biaodan">
+				<form action="" class="login">
+					<h1>login</h1>
+					<input type="text" placeholder="账号" />
+					<input type="password" placeholder="密码" />
+					<button type="submit"><a onclick="loading.in('./首页.html')">登录</a></button>
+					<div class="control">
+						<span>没有账号？<a href="#">Register</a></span>
+					</div>
+				</form>
+				<form action="" class="register disappear" >
+					<h1>register</h1>
+					<input type="text" placeholder="账号" />
+					<input type="password" placeholder="密码" />
+					<button type="submit">注册</button>
+					<div class="control">
+						<span>已有账号？<a href="#">Login</a> </span>
+					</div>
+				</form>
+			</div>
+			<div class="neirong">
+				<img src="./img/个人/登录.png"/>
+				<span>旅客，请在这里登录</span>
+			</div>
+		</div>
+		<div class="return">
+			<button onclick="loading.in('./首页.html')">返回首页</button>
+		</div>
+
+		<!-- 跳转页面 -->
+		<div class="loading">
+			<svg viewbox="0 0 50 50">
+				<circle r='25' cx='25' cy='25'></circle>
+			</svg>
+			<p>Loading</p>
+		</div>
+		<script src="./js/登陆注册.js"></script>
+		<script src="./js/通用.js"></script>
+	</body>
+</html>

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/通用.css">
+    <link rel="stylesheet" href="./css/热门景点.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <title>热门景点</title>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav style="background: #0F0F0F;" id="navbar">
+        <div class="container">
+            <!-- logo -->
+            <div class="navbar-header ">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- logo -->
+                <a href="./welcome.html"><img src="./img/logo.png" title="logo"></a>
+            </div>
+
+            <!-- 内容区域 -->
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <ul class="nav navbar-nav" id="example-navbar-collapse">
+                    <li><a href="./首页.html">首页</a></li>
+                    <li><a href="./热门景点.html">热门景点</a></li>
+                    <li><a href="./特色美食.html">特色美食</a></li>
+                    <li><a href="./住宿推荐.html">住宿推荐</a></li>
+                    <li><a href="./旅游线路.html">旅游线路</a></li>
+                    <li><a href="./文化体验.html">文化体验</a></li>
+                    <li><a href="./当地活动.html">当地活动</a></li>
+                    <li><a href="./官方宣传.html">官方资讯</a></li>
+                    <li><a href="./游客服务.html">游客服务</a></li>
+                    <li><a href="./登录注册.html">登录 | 注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 内容 -->
+    <div class="bannerDiv">
+        <div class="banner">
+            <img src="./img/景点/景点-banner.png">
+        </div>
+    </div>
+
+    <!-- 搜索框 -->
+    <div class="search flag">
+        <input type="text">
+        <button>搜索</button>
+    </div>
+
+    <div class="big-nav">
+        <!-- 插入 -->
+        <div class="all">
+            <div class="all-title">
+                <h1 class="flag">多彩贵州：探秘自然奇观，体验民族风情</h1>
+                <p class="flag">在祖国的西南腹地，有一片被大自然深情抚摸的土地——贵州。这里，山川壮丽，河流秀美，民族文化璀璨夺目，历史遗迹诉说着千年的故事。贵州，一个让人心驰神往的地方，等待着每一位旅者来揭开它神秘而多彩的面纱。
+                </p>
+            </div>
+            <div class="text-img">
+                <div class="nav-all">
+                    <div class="all-con flag">
+                        <div class="all-img">
+                            <img src="./img/景点/all-自然风光.webp">
+                        </div>
+                        <div class="all-text text1">
+                            <p class="flag">自然风光篇</p>
+                            <p class="flag">贵州，被誉为“山地公园省”，拥有无数令人叹为观止的自然景观。</p>
+                        </div>
+                    </div>
+                    <div class="all-con flag">
+                        <div class="all-img">
+                            <img src="./img/景点/all-民族文化.webp">
+                        </div>
+                        <div class="all-text text2">
+                            <p class="flag">民族文化篇</p>
+                            <p class="flag">这是一个多民族聚居的省份，苗族、侗族、布依族、水族等18个世居少数民族在这里和谐共生。</p>
+                        </div>
+                    </div>
+                    <div class="all-con flag">
+                        <div class="all-img">
+                            <img src="./img/景点/all-历史遗迹.webp">
+                        </div>
+                        <div class="all-text text3">
+                            <p class="flag">历史遗迹篇</p>
+                            <p class="flag">这里不仅自然风光旖旎，历史文化同样悠久。在这里，你可以感受贵州历史的厚重与辉煌。</p>
+                        </div>
+                    </div>
+                    <div class="all-con flag">
+                        <div class="all-img">
+                            <img src="./img/景点/all-特色体验.webp">
+                        </div>
+                        <div class="all-text text4">
+                            <p class="flag">特色体验篇</p>
+                            <p class="flag">这里是一个充满惊喜和可能的地方.每一次体验，都是一次全新的发现。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 内容 推荐景点 -->
+        <div class="row arrow" id="arrowBtn">
+            <div class="col-lg-2 flag" id="first-arrow">
+                <p>镇远古城</p>
+            </div>
+            <div class="col-lg-2 flag">
+                <p>肇兴侗寨</p>
+            </div>
+            <div class="col-lg-2 flag">
+                <p>千户苗寨</p>
+            </div>
+            <div class="col-lg-2 flag">
+                <p>金海雪山</p>
+            </div>
+            <div class="col-lg-2 flag">
+                <p>青岩古镇</p>
+            </div>
+            <div class="col-lg-2 flag">
+                <p>万峰林</p>
+            </div>
+        </div>
+        <div class="arrow-content" id="arrowContent">
+            <nav class="container">
+                <!-- 4-镇远古镇 -->
+                <div class="arrow-one row flag">
+                    <nav class="arrow-img1 col-lg-5">
+                        <img src="./img/景点/镇远古镇1.jpg" class="img-responsive">
+                    </nav>
+                    <nav class="col-lg-7">
+                        <h1 class="flag"> 水韵古镇，一步一景，一梦千年</h1>
+                        <h3 class="flag">镇远古镇</h3>
+                        <h4 class="flag">The ancient town of Zhenyuen</h4>
+                        <nav class="row">
+                            <nav class="font1 col-lg-7 flag">
+                                <p>在贵州这片神秘而多彩的土地上，隐藏着一颗璀璨的明珠——镇远古镇。它静静地躺在舞阳河畔，仿佛一位历经沧桑的老者，静静地诉说着千年的故事。踏入镇远古镇，让人不由自主地放慢脚步，去感受那份久违的宁静与美好。
+                                </p>
+                                <button class="arrow-btn">了解更多</button>
+                            </nav>
+                            <nav class="col-lg-5 arrow-img2">
+                                <img src="./img/景点/镇远古镇2.jpg" class="img-responsive">
+                            </nav>
+                        </nav>
+                    </nav>
+                </div>
+                <!-- 2-肇兴侗寨 -->
+                <div class="arrow-one row flag">
+                    <nav class="arrow-img1 col-lg-5">
+                        <img src="./img/景点/肇兴侗寨1.jpg" class="img-responsive">
+                    </nav>
+                    <nav class="col-lg-7">
+                        <h1 class="flag">鼓楼声声，肇兴侗情，一梦千年不散场</h1>
+                        <h3 class="flag">肇兴侗寨</h3>
+                        <h4 class="flag">Zhaoxing Dong village</h4>
+                        <nav class="row">
+                            <nav class="font1 col-lg-7 flag">
+                                <p>在贵州东南部那片被青山绿水环抱的秘境中，隐藏着一个被时光温柔以待的古老村落——肇兴侗寨。这里，是侗族文化的璀璨明珠，是自然与人文和谐共生的典范。当您踏入这片神奇的土地，一场关于古老与现代的穿越之旅，便悄然开启。
+                                </p>
+                                <button class="arrow-btn">了解更多</button>
+                            </nav>
+                            <nav class="col-lg-5 arrow-img2">
+                                <img src="./img/景点/肇兴侗寨2.jpg" class="img-responsive">
+                            </nav>
+                        </nav>
+                    </nav>
+                </div>
+                <!-- 3-千户苗寨 -->
+                <div class="arrow-one row flag">
+                    <nav class="arrow-img1 col-lg-5">
+                        <img src="./img/景点/千户苗寨1.jpg" class="img-responsive">
+                    </nav>
+                    <nav class="col-lg-7">
+                        <h1 class="flag">千户苗寨的古老韵律与现代风情</h1>
+                        <h3 class="flag">千户苗寨</h3>
+                        <h4 class="flag">Qianhu Miao Village</h4>
+                        <nav class="row">
+                            <nav class="font1 col-lg-7 flag">
+                                <p>在贵州的崇山峻岭之中，隐藏着一个令人向往的秘境——西江千户苗寨。这里，是苗族文化的发源地，是自然与人文和谐共生的典范。每一砖一瓦，每一草一木，都承载着苗族人民千年的历史与故事，等待着每一位旅人的探寻与发现。
+                                </p>
+                                <button class="arrow-btn">了解更多</button>
+                            </nav>
+                            <nav class="col-lg-5 arrow-img2">
+                                <img src="./img/景点/千户苗寨2.jpg" class="img-responsive">
+                            </nav>
+                        </nav>
+                    </nav>
+                </div>
+                <!-- 内容1：金海雪山 -->
+                <div class="arrow-one row flag">
+                    <nav class="arrow-img1 col-lg-5">
+                        <img src="./img/景点/金海雪山1.jpg" class="img-responsive">
+                    </nav>
+                    <nav class="col-lg-7">
+                        <h1 class="flag">穿越四季的奇迹：金海与雪山的浪漫邂逅</h1>
+                        <h3 class="flag">金海雪山</h3>
+                        <h4 class="flag">Golden sea Snow mountain</h4>
+                        <nav class="row">
+                            <nav class="font1 col-lg-7 flag">
+                                <p>在贵州这片神奇的土地上，藏着一个让人心驰神往的秘境——金海雪山。当春日的暖阳轻拂过大地，万顷油菜花海如金色的波浪般翻涌，而远处，皑皑雪山仿佛穿越时空而来，与这片金色海洋交相辉映，构成了一幅令人震撼的自然奇观。
+                                </p>
+                                <button class="arrow-btn">了解更多</button>
+                            </nav>
+                            <nav class="col-lg-5 arrow-img2">
+                                <img src="./img/景点/金海雪山2.jpg" class="img-responsive">
+                            </nav>
+                        </nav>
+                    </nav>
+                </div>
+
+                <!-- 5-青岩古镇 -->
+                <div class="arrow-one row flag">
+                    <nav class="arrow-img1 col-lg-5">
+                        <img src="./img/景点/青岩古镇1.jpg" class="img-responsive">
+                    </nav>
+                    <nav class="col-lg-7">
+                        <h1 class="flag">漫步青岩，感受古韵今风的魅力</h1>
+                        <h3 class="flag">青岩古镇</h3>
+                        <h4 class="flag">Qingyan ancient town</h4>
+                        <nav class="row">
+                            <nav class="font1 col-lg-7 flag">
+                                <p>在贵州这片充满魅力的土地上，青岩古镇如同一颗璀璨的宝石，镶嵌在绿意盎然的山水之间，历经数百年风雨洗礼，依然保留着古朴的风貌和深厚的文化底蕴。走进青岩，就像翻开了一本厚重的历史书，每一页都记录着过往的辉煌与沧桑。
+                                </p>
+                                <button class="arrow-btn">了解更多</button>
+                            </nav>
+                            <nav class="col-lg-5 arrow-img2">
+                                <img src="./img/景点/青岩古镇2.jpg" class="img-responsive">
+                            </nav>
+                        </nav>
+                    </nav>
+                </div>
+                <!-- 6-安顺龙宫 -->
+                <div class="arrow-one row flag">
+                    <nav class="arrow-img1 col-lg-5">
+                        <img src="./img/景点/万峰林1.jpg" class="img-responsive">
+                    </nav>
+                    <nav class="col-lg-7">
+                        <h1 class="flag">大自然的鬼斧神工，峰回路转的视觉盛宴</h1>
+                        <h3 class="flag">万峰林</h3>
+                        <h4 class="flag">Wanfenglin National scenic spot</h4>
+                        <nav class="row">
+                            <nav class="font1 col-lg-7 flag">
+                                <p>在贵州，万峰林以其独特的喀斯特地貌和壮丽的自然风光，成为了无数游客心中的向往之地。这里山峦起伏，峰林耸立，宛如一幅幅精美的画卷，展现在世人面前。走进万峰林，就像走进了一个梦幻般的世界，让人流连忘返。
+                                </p>
+                                <button class="arrow-btn">了解更多</button>
+                            </nav>
+                            <nav class="col-lg-5 arrow-img2">
+                                <img src="./img/景点/万峰林2.jpg" class="img-responsive">
+                            </nav>
+                        </nav>
+                    </nav>
+                </div>
+            </nav>
+        </div>
+
+
+
+        <div class="container">
+            <div class="vlog-title">
+                <h1 class="flag">打卡圣地</h1>
+            </div>
+        </div>
+        <!-- 打卡圣地 -->
+        <div class="contai">
+            <div class="vlog">
+                <div class="vlog-nr1">
+                    <div class="vlog-left flag">
+                        <img src="./img/景点/vlog-千户苗寨.webp" class="img-responsive">
+                    </div>
+                    <div class="vlog-right">
+                        <h2 class="flag">TOP 1 </h2>
+                        <h1 class="flag">
+                            <img src="./img/景点/vlog-定位.png" class="svg">千户苗寨
+                        </h1>
+                        <p class="txt1 flag">贵州省黔东南州雷山县西江镇</p>
+                        <p class="flag">中国乃至全世界最大的苗族聚居村寨。这里全寨共有1468户，6000余人，其中99.5%的居民为苗族。</p>
+                        <p class="flag">苗寨四面环山，梯田依山而建，白水河穿寨而过，将其一分为二。吊脚楼层层叠叠，气势恢宏，是苗族传统建筑的瑰宝。</p>
+                        <p class="flag">西江千户苗寨被誉为“露天博物馆”和“中国最美的苗寨”，是研究苗族文化的绝佳之地。</p>
+                    </div>
+                </div>
+                <div class="vlog-nr1">
+                    <div class="vlog-left2 flag">
+                        <img src="./img/景点/vlog-小七孔.webp" class="img-responsive">
+                    </div>
+                    <div class="vlog-right2">
+                        <h2 class="flag">TOP 2 </h2>
+                        <h1 class="flag">
+                            <img src="./img/景点/vlog-定位.png" class="svg">荔波小七孔
+                        </h1>
+                        <p class="txt1 flag">贵州省黔南布依族苗族自治州荔波县西南部</p>
+                        <p class="flag">一处集森林、溪流、瀑布、湖泊等多种自然景观于一体的绝美之地，被誉为“地球上的绿宝石”。</p>
+                        <p class="flag">小七孔得名于一座横跨响水河的七孔石桥，它始建于清代道光年间，至今已有数百年历史。</p>
+                        <p class="flag">荔波小七孔不仅自然美景丰富，还充满了神秘的人文气息。这里的少数民族文化深厚，你可以体验其独特风情。</p>
+                    </div>
+                </div>
+                <div class="vlog-nr1">
+                    <div class="vlog-left flag">
+                        <img src="./img/景点/vlog-黄果树.webp" class="img-responsive">
+                    </div>
+                    <div class="vlog-right">
+                        <h2 class="flag">TOP 3 </h2>
+                        <h1 class="flag">
+                            <img src="./img/景点/vlog-定位.png" class="svg">
+                            黄果树瀑布
+                        </h1>
+                        <p class="txt1 flag">贵州省安顺市镇宁布依族苗族自治县</p>
+                        <p class="flag">亚洲最大的瀑布，也是世界著名大瀑布之一。其高度达77.8米，宽101米，水势浩大，气势磅礴。</p>
+                        <p class="flag">瀑布位于喀斯特地貌中，历经万年冲刷形成，是贵州旅游的标志性景点。</p>
+                        <p class="flag">无论是白天还是夜晚，黄果树瀑布都有其独特的魅力。明代旅行家徐霞客曾游历至此，留下千古绝唱。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="vlog-title flag">
+                <h1>了解更多</h1>
+                <br>
+            </div>
+        </div>
+
+        <!-- 景点分类 -->
+        <div class="classify">
+            <div class="px1 top-left card flag">
+                <img src="./img/景点/590-390.jpg">
+                <div class="text">
+                    <h1>自然风光类</h1>
+                    <p>自然风光类景点是贵州旅游的核心魅力所在，涵盖了瀑布、喀斯特地貌、高山草原等多种自然景观。从黄果树瀑布的磅礴壮观到荔波小七孔的清新脱俗，再到乌蒙大草原的广袤无垠，每一处都让人感受到大自然的鬼斧神工和贵州独特的地理风貌。
+                    </p>
+                    <p><button>查看更多</button></p>
+                </div>
+            </div>
+            <div class="px4 bottom-left card flag">
+                <img src="./img/景点/590-195-苗寨.jpg">
+                <div class="text">
+                    <h1>民族文化类</h1>
+                    <p>贵州是一个多民族聚居的省份，民族文化类景点以其丰富的文化内涵和独特的民族风情吸引着无数游客。</p>
+                    <p><button>查看更多</button></p>
+                </div>
+            </div>
+            <div class="px2 top-right1 card flag">
+                <img src="./img/景点/295-195-漂流.jpg">
+                <div class="text">
+                    <h1>生态探险类</h1>
+                    <p>生态探险类景点为游客提供了亲近自然、挑战自我的机会。</p>
+                    <p><button>查看更多</button></p>
+                </div>
+            </div>
+            <div class="px2 top-right2 card flag">
+                <img src="./img/景点/295-195-温泉.jpg">
+                <div class="text">
+                    <h1>温泉养生类</h1>
+                    <p>温泉养生类景点是贵州旅游的一大特色。</p>
+                    <p><button>查看更多</button></p>
+                </div>
+            </div>
+            <div class="px3 mid-right card flag">
+                <img src="./img/景点/595-190-遵义会议.jpg">
+                <div class="text">
+                    <h1>历史遗迹类</h1>
+                    <p>历史遗迹类景点承载着贵州悠久的历史和深厚的文化底蕴，这些景点见证了贵州的历史变迁和文明发展，让游客在游览中感受到历史的厚重和文化的传承。</p>
+                    <p><button>查看更多</button></p>
+                </div>
+            </div>
+            <div class="px2 bottom-right1 card flag">
+                <img src="./img/景点/295-195-生态农庄.jpg">
+                <div class="text">
+                    <h1>农业科技类</h1>
+                    <p>农业科技类景点展示了贵州现代农业的发展成果和农业科技的应用。</p>
+                    <p><button>查看更多</button></p>
+                </div>
+            </div>
+            <div class="px2 bottom-right2 card flag">
+                <img src="./img/景点/295-195-大歌节.jpg">
+                <div class="text">
+                    <h1>特色活动类</h1>
+                    <p>特色活动类景点为游客提供了参与和体验贵州多元文化的机会。</p>
+                    <p><button>查看更多</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 底部 版权信息 -->
+    <div class="bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h5>按目的搜索</h5>
+                            <p>观光 | 美食 | 购物 | 住宿 | 交通 </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <h5>查询交通路线</h5>
+                            <p>需要查询贵州各地区路线的可点击这里</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h5>产品</h5>
+                            <p>在线客服 | 在线机器人 | 呼叫中心 | 数据大屏</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <h5>帮助</h5>
+                            <p>开发指南 | 下载中心 | 帮助中心 | 更新日志 | 旅游中心 | 个人动态</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h5>联系我们</h5>
+                            <p>电话:4003-000-929 </p>
+                            <p>邮箱:help@qianxing.com</p>
+                            <p>商务合作:hezuo@qianxing.com</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <h5>加入我们</h5>
+                            <p>渠道合作</p>
+                            <p>招贤纳士</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="col-lg-6">
+                        <h5>公众号</h5>
+                        <img src="./img/bottom/黔行天下.jpg">
+                    </div>
+                    <div class="col-lg-6">
+                        <h5>微信联系</h5>
+                        <img src="./img/bottom/微信联系.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom2">
+        <p> @2024 张威13787144292-版权所有</p>
+    </div>
+    <script src="./js/通用.js"></script>
+    <script src="./js/热门景点.js"></script>
+</body>
+
+</html>

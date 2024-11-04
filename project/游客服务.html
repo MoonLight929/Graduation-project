@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/通用.css">
+    <link rel="stylesheet" href="./css/游客服务.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <title>游客服务</title>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav style="background: #0F0F0F;" id="navbar">
+        <div class="container">
+            <!-- logo -->
+            <div class="navbar-header ">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- logo -->
+                <a href="./welcome.html"><img src="./img/logo.png" title="logo"></a>
+            </div>
+
+            <!-- 内容区域 -->
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <ul class="nav navbar-nav" id="example-navbar-collapse">
+                    <li><a href="./首页.html">首页</a></li>
+                    <li><a href="./热门景点.html">热门景点</a></li>
+                    <li><a href="./特色美食.html">特色美食</a></li>
+                    <li><a href="./住宿推荐.html">住宿推荐</a></li>
+                    <li><a href="./旅游线路.html">旅游线路</a></li>
+                    <li><a href="./文化体验.html">文化体验</a></li>
+                    <li><a href="./当地活动.html">当地活动</a></li>
+                    <li><a href="./官方资讯.html">官方资讯</a></li>
+                    <li><a href="./游客服务.html">游客服务</a></li>
+                    <li><a href="./登录注册.html">登录 | 注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 侧边导航栏 -->
+    <div class="shell">
+        <ul class="navSide">
+            <li class="activeSide" id="logoSide">
+                <a href="#">
+                    <div class="icon">
+                        <div class="imageBox">
+                            <img src="./img/个人/头像.png" id="person">
+                        </div>
+                    </div>
+                    <div class="text">池小旭の个人界面</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="icon">
+                        <div class="imageBox">
+                            <i>
+                                <img src="./img/个人/关注.png">
+                            </i>
+                        </div>
+                    </div>
+                    <div class="text">关注</div>
+                </a>
+            </li>
+            <li>
+                <a href="#pictrue">
+                    <div class="icon">
+                        <div class="imageBox">
+                            <i>
+                                <img src="./img/个人/私信.png">
+                            </i>
+                        </div>
+                    </div>
+                    <div class="text">私信</div>
+                </a>
+            </li>
+            <li>
+                <a href="#theme">
+                    <div class="icon">
+                        <div class="imageBox">
+                            <i>
+                                <img src="./img/个人/发布.png">
+                            </i>
+                        </div>
+                    </div>
+                    <div class="text">动态</div>
+                </a>
+            </li>
+            <li>
+                <a href="#wallet">
+                    <div class="icon">
+                        <div class="imageBox">
+                            <i>
+                                <img src="./img/个人/收藏.png">
+                            </i>
+                        </div>
+                    </div>
+                    <div class="text">收藏</div>
+                </a>
+            </li>
+            <li>
+                <a href="#code">
+                    <div class="icon">
+                        <div class="imageBox">
+                            <i>
+                                <img src="./img/个人/购买.png">
+                            </i>
+                        </div>
+                    </div>
+                    <div class="text">购买记录</div>
+                </a>
+            </li>
+            <li>
+                <a href="#author">
+                    <div class="icon">
+                        <div class="imageBox">
+                            <i>
+                                <img src="./img/个人/历史.png">
+                            </i>
+                        </div>
+                    </div>
+                    <div class="text">历史浏览</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="bigNav">
+        <section class="topPerson">
+            <div class="shadow"></div>
+        </section>
+        <div class="person">
+            <img src="./img/个人/头像.png">
+            <div class="information">
+                <p class="personId">池小旭</p>
+                <p>
+                    <font><strong>6</strong>篇原创</font>
+                    <font><strong>929</strong>粉丝</font>
+                    <font><strong>19</strong>关注</font>
+                    <font><strong>32</strong>篇收藏</font>
+                </p>
+                <p>个人简介：Wala li longla!!</p>
+                <p>IP属地：贵州省</p>
+            </div>
+            <div class="edit">
+                <button>编辑资料</button>
+                <button>设置</button>
+                <button>管理博文</button>
+            </div>
+        </div>
+        <section id="" class="focus">
+            <h3>我的关注</h3>
+        </section>
+        <section id="theme">Theme</section>
+        <section id="wallet">Wallet</section>
+        <section id="pictrue">Picture</section>
+        <section id="code">Code</section>
+        <section id="author">Author</section>
+    </div>
+
+
+
+
+
+
+    <!-- 底部 版权信息 -->
+    <div class="bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h5>按目的搜索</h5>
+                            <p>观光 | 美食 | 购物 | 住宿 | 交通 </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <h5>查询交通路线</h5>
+                            <p>需要查询贵州各地区路线的可点击这里</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h5>产品</h5>
+                            <p>在线客服 | 在线机器人 | 呼叫中心 | 数据大屏</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <h5>帮助</h5>
+                            <p>开发指南 | 下载中心 | 帮助中心 | 更新日志 | 旅游中心 | 个人动态</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h5>联系我们</h5>
+                            <p>电话:4003-000-929 </p>
+                            <p>邮箱:help@qianxing.com</p>
+                            <p>商务合作:hezuo@qianxing.com</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <h5>加入我们</h5>
+                            <p>渠道合作</p>
+                            <p>招贤纳士</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="col-lg-6">
+                        <h5>公众号</h5>
+                        <img src="./img/bottom/黔行天下.jpg">
+                    </div>
+                    <div class="col-lg-6">
+                        <h5>微信联系</h5>
+                        <img src="./img/bottom/微信联系.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom2">
+        <p> @2024 张威13787144292-版权所有</p>
+    </div>
+    <script src="./js/通用.js"></script>
+    <script src="./js/游客服务.js"></script>
+</body>
+
+</html>

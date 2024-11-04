@@ -1,0 +1,475 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url('../img/背景2.jpg');
+    /* 背景图片不重复 */
+    background-repeat: no-repeat;
+    /* 背景图片位置居中 */
+    background-position: center;
+    /* 背景图片位置固定 */
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* 鼠标监听移动 */
+#navbar{   
+    position: fixed;
+    /* top: 0px; */
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
+    z-index: 99;
+    /* overflow: hidden; */
+}
+#navbar.active{
+    top: -50px;
+}
+#navbar ul,li{
+    background: #0F0F0F;
+}
+.banner{
+    max-width: 100%;
+    height: auto;
+    border-top: 50px solid black;
+}
+.photo {
+    width: 100%;
+    /* height: 100%; */
+    margin: 0px auto;
+}
+
+/* 分割线 */
+.bot {
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    padding-top: 10px;
+    margin: 0px auto;
+}
+
+.bot .line {
+    display: inline-block;
+    /*允许在元素上设置宽度和高度，将保留上下外边距/内边距,元素之后不添加换行符*/
+    border-top: 1px solid black;
+    width: 450px;
+}
+
+.bot .title {
+    color: black;
+    font-size: 25px;
+    font-family: "宋体";
+    padding: 0px 70px;
+}
+
+.bot>p {
+    font-size: 15px;
+    font-family: "宋体";
+    font-weight: bolder;
+    line-height: 20px;
+}
+
+/* 景点 */
+.place {
+    font-family: "宋体";
+}
+
+/* .place-left {
+    width: 630px;
+    height: 470px;
+} */
+
+.place h1 {
+    font-weight: bolder;
+    line-height: 90px;
+}
+
+.place p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.place button {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 6px 12px;
+    margin-top: 40px;
+}
+
+.place>div {
+    margin-bottom: 60px;
+}
+
+.place button:hover {
+    background-color: rgb(230, 230, 230);
+    color: rgb(47, 47, 47);
+    transition: 0.3s;
+}
+
+/* 美食推荐 */
+.eat-left {
+    width: 150px;
+    height: 130px;
+}
+
+.eat {
+    font-family: '宋体';
+}
+
+.eat h3 {
+    font-weight: bold;
+}
+
+.eat>div {
+    margin-bottom: 30px;
+}
+
+.eat a {
+    position: absolute;
+    right: 6px;
+    bottom: -20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.eat a:hover {
+    color: blue;
+}
+
+/* 传统文化 */
+.card {
+    position: relative;
+    width: 270px;
+    height: 380px;
+    margin: 13px 7px;
+    display: flex;
+    float: left;
+    /* 子元素会在交叉轴的底部对齐 */
+    align-items: flex-end;
+    text-align: center;
+    color: whitesmoke;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1),
+        0px 2px 2px rgba(0, 0, 0, 0.1),
+        0px 4px 4px rgba(0, 0, 0, 0.1),
+        0px 8px 8px rgba(0, 0, 0, 0.1),
+        0px 16px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: "宋体";
+}
+
+/* ::before 创建一个伪元素，其将成为匹配选中的元素的第一个子元素 */
+.card::before {
+    content: "";
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* background-image: url("../img/nr-culture/侗族大歌2.jpg"); */
+    background-size: cover;
+    /* 为每一个背景图片设置初始位置 */
+    background-position: 0 0;
+    transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* 分别设置图片 */
+.card:nth-child(1)::before {
+    background-image: url("../img/nr-culture/侗族大歌2.jpg");
+}
+
+.card:nth-child(2)::before {
+    background-image: url("../img/nr-culture/水族马尾绣.jpg");
+}
+
+.card:nth-child(3)::before {
+    background-image: url("../img/nr-culture/苗族芦笙舞.jpg");
+}
+
+.card:nth-child(4)::before {
+    background-image: url("../img/nr-culture/苗绣.jpg");
+}
+
+/* 遮罩 */
+.card::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 200%;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.25) 55%,
+            rgba(0, 0, 0, 0.8) 100%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(0);
+    /* 过渡效果 */
+    transition: transform 1.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.card .content {
+    width: 100%;
+    display: flex;
+    /* flex-direction 属性规定灵活项目的方向 */
+    /* 灵活的项目将垂直显示，正如一个列一样。 */
+    flex-direction: column;
+    /* 弹性 <div>元素的所有项目的居中对齐 */
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    padding: 16px 8px;
+    transform: translateY(70%);
+    transition: transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.card h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 16px;
+    /* 字间距 */
+    letter-spacing: 2px;
+    width: 85%;
+    margin-top: 25px;
+    /* 文本两端对齐 */
+    text-align: justify;
+}
+
+.card button {
+    /* 光标为一只手 */
+    cursor: pointer;
+    border: none;
+    background-color: rgba(213, 213, 213, 0.5);
+    color: #000000;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.card button:hover {
+    background-color: rgb(180, 180, 180);
+    transition: 0.2s;
+}
+
+/* 匹配不符合一组选择器的元素 */
+.content *:not(h3) {
+    /* .content下，除了h3，其他元素隐藏并向下移20px */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 0.7s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.card:hover {
+    align-items: center;
+}
+
+.card:hover::before {
+    transform: translateY(-5%);
+}
+
+.card:hover::after {
+    transform: translateY(-50%);
+}
+
+.card:hover .content {
+    transform: translateY(0);
+}
+
+.card:hover .content *:not(h3) {
+    opacity: 1;
+    transform: translateY(0);
+    /* 过渡效果延迟 */
+    transition-delay: 0.1s;
+}
+
+/* 其他内容 */
+#btns {
+    display: flex;
+    align-items: flex-end;
+    height: 60px;
+    position: relative;
+}
+
+/* 选项按钮 */
+#btns .an {
+    /* 轮廓（outline）是绘制于元素周围的一条线，位于边框边缘的外围，可起到突出元素的作用 */
+    outline: none;
+    padding: 0;
+    border: 0px;
+    background-color:rgb(233, 233, 233);
+    color: #000000;
+    width: 120px;
+    cursor: pointer;
+    margin-right: 1px;
+    height: 42px;
+    border-radius: 5px 5px 0px 0px;
+}
+#box{
+    margin-bottom: 20px;
+}
+#tabBox {
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    height: 295px;
+    border-radius: 0px 5px 5px 5px;
+}
+
+.act {
+    background: rgb(255, 255, 255);
+    height: 52px;
+    padding: 0px;
+    border: 0;
+    border-radius: 5px 5px 0px 0px;
+    width: 120px;
+    color: rgb(0, 0, 0);
+    outline: none;
+    transition: all linear 0.2s;
+}
+
+ #tabBox div{
+    display: none;
+ }
+ #tabBox div:first-child{
+    display: block;
+ }
+
+/* 酒店 */
+.hotel{
+    width: 540px;
+    position: relative;
+    background-color: rgb(244, 242, 242);
+    height: auto;
+    margin-right: 15px;
+    padding: 10px;
+    float: left;
+    border-radius: 10px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1),
+            0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.hotel:hover{
+    transform: scale(1.01);
+}
+.hotel-img{
+    float: left;
+}
+.hotel-nr{
+    float: left;
+    margin-left: 10px;
+}
+.hotel-nr h4{
+    margin-top: 35px;
+    color: rgb(172, 49, 49);
+    font-size: 30px;
+}
+.hotel-nr a{
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    text-decoration: none;
+    background-color: skyblue;
+    padding: 8px 12px;
+    color: black;
+    border-radius: 7px;
+}
+.hotel-nr a:hover{
+    background-color: rgb(59, 104, 121);
+    color: white;
+    transition:0.3s;
+}
+.activeDiv{
+    position: relative;
+}
+.more{
+    position: absolute;
+    display: block;
+    font-size: 20px;
+    top: 230px;
+    right: 10px;
+    color: rgb(98, 98, 98);
+}
+.more:hover{
+    color: black;
+}
+/* 攻略 */
+.tip{
+    width: 200px;
+    height: 280px;
+    padding: 5px;
+    background-color:rgb(244, 242, 242);
+    /* position:relative; */
+    /* float: left; */
+    margin:0px 8px;
+    /* bottom: 230px; */
+    border-radius: 5px;
+}
+.tip h4{
+    font-weight: bold;
+}
+.tip a{
+    text-decoration: none;
+    position: relative;
+    bottom: -5px;
+    right: -130px;
+}
+.tips-nav:hover{
+    transform: scale(1.01);
+    transition: 0.3s;
+}
+
+/* .news-img{
+    width: 700px;
+    height: 230px;
+    background-color: orange;
+} */
+/* .news img {
+    width: 700px;
+    height: 270px;
+}
+
+.news ul,
+li {
+    position: relative;
+    list-style: none;
+    font-size: 18px;
+    line-height: 58px;
+    margin-top: -630px;
+
+}
+
+.name li {
+    width: 400px;
+    border-bottom: 1px solid black;
+    background-color: rgb(241, 231, 231);
+    margin: 2px;
+}
+
+.news{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo {
+    width: 650px;
+    height: 270px;
+    margin-top: -630px;
+}
+
+.photo>li {
+    display: none;
+}
+
+.photo>li:nth-child(1) {
+    display: block;
+}
+
+.name>li:hover {
+    color: red;
+} */

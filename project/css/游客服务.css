@@ -1,0 +1,205 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+}
+.bigNav{
+    background-color: whitesmoke;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    /* margin-left: 80px; */
+    /* padding-left: 100px; */
+    /* justify-content: center;
+    align-items: center; */
+    /* font: 900 100px ''; */
+    /* background-color:whitesmoke; */
+}
+
+.shell {
+    position: fixed;
+    width: 84px;
+    height: 100%;
+    background-color: black;
+    z-index: 1000;
+    transition: width 0.5s;
+    padding-left: 10px;
+    overflow: hidden;
+}
+.shell a{
+    text-decoration: none;
+}
+
+.shell:hover {
+    width: 300px;
+}
+
+.imageBox {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.imageBox img {
+    width: 30px;
+    height: 30px;
+    /* object-fit CSS 属性指定可替换元素（例如：<img>或 <video>）的内容应该如何适应到其使用高度和宽度确定的框 */
+    /* cover:被替换的内容在保持其宽高比的同时填充元素的整个内容框。如果对象的宽高比与内容框不相匹配，该对象将被剪裁以适应内容框。 */
+    object-fit: cover;
+}
+#person{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.shell ul {
+    position: relative;
+    height: 100vh;
+}
+
+.shell ul li {
+    position: relative;
+    padding: 5px;
+}
+
+.activeSide {
+    background-color: whitesmoke;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.activeSide::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 5px 5px 0px 5px #e4e9f5;
+    /* 背景设置为透明 */
+    background: transparent;
+}
+
+.activeSide::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    border-top-right-radius: 25px;
+    box-shadow: 5px -5px 0px 5px #e4e9f5;
+    /* 背景设置为透明 */
+    background: transparent;
+}
+/* 头像 */
+#logoSide {
+    margin: 80px 0 50px 0;
+}
+
+.shell ul li a {
+    position: relative;
+    display: flex;
+    /* white-space 属性设置如何处理元素内的空白 */
+    /* nowrap文本不会换行，文本会在在同一行上继续，直到遇到 <br>标签为止 */
+    white-space: nowrap;
+}
+
+.icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    transition: 0.5s;
+}
+
+.icon i {
+    font-size: 30px;
+    z-index: 999;
+}
+
+.text {
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: rgb(48, 130, 163);
+    padding-left: 15px;
+    /* text-transform 属性用于控制文本的大小写。这个属性可以改变元素中的字母大小写，而不论源文档中文本的大小写。 */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+/* 最上方 */
+.topPerson{
+    width: 100%;
+    height: 300px;
+    background-image: url("../img/个人/贵州.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.shadow{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    background-color: rgba(0,0,0,0.2);
+}
+/* 个人 */
+.person{
+    width: 100%;
+    height: auto;
+    /* background-color:whitesmoke; */
+    position: relative;
+}
+.person>img{
+    position: absolute;
+    left: 150px;
+    top: -70px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 1px -2px 3px rgb(120, 117, 117);
+}
+.information{
+    padding-left: 320px;
+}
+.personId{
+    font-family: "幼圆";
+    font-size: 34px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.information font{
+    padding: 5px 12px;
+    letter-spacing: 1px;
+}
+.edit{
+    position: absolute;
+    right: 30px;
+    top: 7px;
+}
+.edit button{
+    border: 1px solid grey;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 4px 15px;
+    margin:0px  5px;
+    transition: 0.5s;
+}
+.edit button:hover{
+    background-color: rgb(228, 228, 228);
+}
+
+/* 我的关注 */

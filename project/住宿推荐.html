@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/通用.css">
+    <link rel="stylesheet" href="./css/住宿推荐.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <title>住宿推荐</title>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav style="background: #0F0F0F;" id="navbar">
+        <div class="container">
+            <!-- logo -->
+            <div class="navbar-header ">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- logo -->
+                <a href="./welcome.html"><img src="./img/logo.png" title="logo"></a>
+            </div>
+
+            <!-- 内容区域 -->
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <ul class="nav navbar-nav" id="example-navbar-collapse">
+                    <li><a href="./首页.html">首页</a></li>
+                    <li><a href="./热门景点.html">热门景点</a></li>
+                    <li><a href="./特色美食.html">特色美食</a></li>
+                    <li><a href="./住宿推荐.html">住宿推荐</a></li>
+                    <li><a href="./旅游线路.html">旅游线路</a></li>
+                    <li><a href="./文化体验.html">文化体验</a></li>
+                    <li><a href="./当地活动.html">当地活动</a></li>
+                    <li><a href="./官方资讯.html">官方资讯</a></li>
+                    <li><a href="./游客服务.html">游客服务</a></li>
+                    <li><a href="./登录注册.html">登录 | 注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- banner -->
+    <div class="banner">
+        <div class="bg"></div>
+        <div class="hotelImg">
+            <img src="./img/official/酒店图标.png" class="imgHotel">
+        </div>
+        <div class="text">
+            <div class="textContent">
+                <h1>贵州之旅，安睡云端</h1>
+                <h3>带你尽享舒适之旅</h3>
+            </div>
+        </div>
+        <div class="text2">
+            <div class="textContent2">
+                <p>黔游天下，让每一段旅程都有家的温暖</p>
+                <p>Bringing the warmth of home to every journey</p>
+            </div>
+        </div>
+
+        <!-- 搜索框 -->
+        <div class="findNav">
+            <div class="find">
+                <div class="date1">
+                    <p>住房日期</p>
+                    <!-- 日历 -->
+                    <div class="date-display" id="dateDisplay"></div>
+                    <div class="date">
+                        <div class="calendar" id="calendar">
+                            <div class="calendar-header">
+                                <button id="prevMonth">&lt;</button>
+                                <span id="calendarMonthYear"></span>
+                                <button id="nextMonth">&gt;</button>
+                            </div>
+                            <div class="calendar-days" id="calendarDays"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="date2">
+                    <p>退房日期</p>
+                    <div class="date-display" id="dateDisplay2"></div>
+                </div>
+                <div class="personNum">
+                    <p>入住人数</p>
+                </div>
+                <div class="roomNum">
+                    <p>入住房间数</p>
+                </div>
+                <div class="findHouse">
+                    <button>查询酒店</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 内容 -->
+    <div class="big-nav">
+        <div class="title container">
+            <h2>多样选择，满足您的不同需求</h2>
+            <p>为了满足不同游客的需求，我们提供了多样化的住宿选择。从豪华酒店到温馨民宿，从山间小屋到河畔别墅，每一款房型都经过精心设计，旨在为您带来最佳的住宿体验。无论您是家庭出游、情侣度假还是商务出行，我们都能为您提供合适的住宿方案。在这里，您将感受到家的温暖与舒适，让您的旅途更加轻松愉快。
+            </p>
+        </div>
+
+
+        <!-- 酒店推荐 -->
+        <div class="roomRecommend">
+            <div class="container">
+                <h2>酒店推荐</h2>
+                <div class="roomBtn" id="roomBtn">
+                    <button class="btnActive">豪华酒店</button>
+                    <button>高档酒店</button>
+                    <button>经济型酒店</button>
+                    <button>民宿</button>
+                    <button>青旅酒店</button>
+                </div>
+            </div>
+            <div class="roomContent" id="roomContent">
+                <nav class="container">
+                    <!-- 豪华酒店 -->
+                    <div class="hotel">
+                        <nav class="hotelContent">
+                            <nav class="hotel1">
+                                <img src="./img/占位图/1.png">
+                                <nav class="hotelIntro">
+                                    <h3>酒店名称</h3>
+                                    <p>位置与交通</p>
+                                    <p>设施与服务</p>
+                                    <p>价格</p>
+                                    <p>用户评价</p>
+                                </nav>
+                            </nav>
+                            <nav class="hotel1">
+                                <img src="./img/占位图/2.png">
+                                <nav class="hotelIntro">
+                                    <h3>酒店名称</h3>
+                                    <p>位置与交通</p>
+                                    <p>设施与服务</p>
+                                    <p>价格</p>
+                                    <p>用户评价</p>
+                                </nav>
+                            </nav>
+                        </nav>
+                        <nav class="hotelContent">
+                            <nav class="hotel1">
+                                <img src="./img/占位图/3.png">
+                                <nav class="hotelIntro">
+                                    <h3>酒店名称</h3>
+                                    <p>位置与交通</p>
+                                    <p>设施与服务</p>
+                                    <p>价格</p>
+                                    <p>用户评价</p>
+                                </nav>
+                            </nav>
+                            <nav class="hotel1">
+                                <img src="./img/占位图/4.png">
+                                <nav class="hotelIntro">
+                                    <h3>酒店名称</h3>
+                                    <p>位置与交通</p>
+                                    <p>设施与服务</p>
+                                    <p>价格</p>
+                                    <p>用户评价</p>
+                                </nav>
+                            </nav>
+                        </nav>
+                    </div>
+                    <!-- 高档酒店 -->
+                    <div class="hotel">
+                        <nav class="hotelContent">
+                            <nav class="hotel1">
+                                <img src="./img/占位图/5.png">
+                                <nav class="hotelIntro">
+                                    <h3>酒店名称</h3>
+                                    <p>位置与交通</p>
+                                    <p>设施与服务</p>
+                                    <p>价格</p>
+                                    <p>用户评价</p>
+                                </nav>
+                            </nav>
+                            <nav class="hotel1">
+                                <img src="./img/占位图/6.png">
+                                <nav class="hotelIntro">
+                                    <h3>酒店名称</h3>
+                                    <p>位置与交通</p>
+                                    <p>设施与服务</p>
+                                    <p>价格</p>
+                                    <p>用户评价</p>
+                                </nav>
+                            </nav>
+                        </nav>
+                        <nav class="hotelContent">
+                            <nav class="hotel1">
+                                <img src="./img/占位图/7.png">
+                                <nav class="hotelIntro">
+                                    <h3>酒店名称</h3>
+                                    <p>位置与交通</p>
+                                    <p>设施与服务</p>
+                                    <p>价格</p>
+                                    <p>用户评价</p>
+                                </nav>
+                            </nav>
+                            <nav class="hotel1">
+                                <img src="./img/占位图/8.png">
+                                <nav class="hotelIntro">
+                                    <h3>酒店名称</h3>
+                                    <p>位置与交通</p>
+                                    <p>设施与服务</p>
+                                    <p>价格</p>
+                                    <p>用户评价</p>
+                                </nav>
+                            </nav>
+                        </nav>
+                    </div>
+                    <!-- 经济型酒店 -->
+                    <div class="hotel">
+                        <nav class="hotelContent">
+                            <nav class="hotel1">
+                                <img src="./img/占位图/1.png">
+                                <nav class="hotelIntro">
+                                    <h3>酒店名称</h3>
+                                    <p>位置与交通</p>
+                                    <p>设施与服务</p>
+                                    <p>价格</p>
+                                    <p>用户评价</p>
+                                </nav>
+                            </nav>
+                            <nav class="hotel1">
+                                <img src="./img/占位图/2.png">
+                                <nav class="hotelIntro">
+                                    <h3>酒店名称</h3>
+                                    <p>位置与交通</p>
+                                    <p>设施与服务</p>
+                                    <p>价格</p>
+                                    <p>用户评价</p>
+                                </nav>
+                            </nav>
+                        </nav>
+                        <nav class="hotelContent">
+                            <nav class="hotel1">
+                                <img src="./img/占位图/3.png">
+                                <nav class="hotelIntro">
+                                    <h3>酒店名称</h3>
+                                    <p>位置与交通</p>
+                                    <p>设施与服务</p>
+                                    <p>价格</p>
+                                    <p>用户评价</p>
+                                </nav>
+                            </nav>
+                            <nav class="hotel1">
+                                <img src="./img/占位图/4.png">
+                                <nav class="hotelIntro">
+                                    <h3>酒店名称</h3>
+                                    <p>位置与交通</p>
+                                    <p>设施与服务</p>
+                                    <p>价格</p>
+                                    <p>用户评价</p>
+                                </nav>
+                            </nav>
+                        </nav>
+                    </div>
+                    <!-- 民宿 -->
+                    <div class="hotel">
+                        <nav class="hotelContent">
+                            <nav class="hotel1">
+                                <img src="./img/占位图/3.png">
+                                <nav class="hotelIntro">
+                                    <h3>酒店名称</h3>
+                                    <p>位置与交通</p>
+                                    <p>设施与服务</p>
+                                    <p>价格</p>
+                                    <p>用户评价</p>
+                                </nav>
+                            </nav>
+                            <nav class="hotel1">
+                                <img src="./img/占位图/4.png">
+                                <nav class="hotelIntro">
+                                    <h3>酒店名称</h3>
+                                    <p>位置与交通</p>
+                                    <p>设施与服务</p>
+                                    <p>价格</p>
+                                    <p>用户评价</p>
+                                </nav>
+                            </nav>
+                        </nav>
+                        <nav class="hotelContent">
+                            <nav class="hotel1">
+                                <img src="./img/占位图/8.png">
+                                <nav class="hotelIntro">
+                                    <h3>酒店名称</h3>
+                                    <p>位置与交通</p>
+                                    <p>设施与服务</p>
+                                    <p>价格</p>
+                                    <p>用户评价</p>
+                                </nav>
+                            </nav>
+                            <nav class="hotel1">
+                                <img src="./img/占位图/7.png">
+                                <nav class="hotelIntro">
+                                    <h3>酒店名称</h3>
+                                    <p>位置与交通</p>
+                                    <p>设施与服务</p>
+                                    <p>价格</p>
+                                    <p>用户评价</p>
+                                </nav>
+                            </nav>
+                        </nav>
+                    </div>
+                    <!-- 青旅酒店 -->
+                    <div class="hotel">
+                        <nav class="hotelContent">
+                            <nav class="hotel1">
+                                <img src="./img/占位图/2.png">
+                                <nav class="hotelIntro">
+                                    <h3>酒店名称</h3>
+                                    <p>位置与交通</p>
+                                    <p>设施与服务</p>
+                                    <p>价格</p>
+                                    <p>用户评价</p>
+                                </nav>
+                            </nav>
+                            <nav class="hotel1">
+                                <img src="./img/占位图/6.png">
+                                <nav class="hotelIntro">
+                                    <h3>酒店名称</h3>
+                                    <p>位置与交通</p>
+                                    <p>设施与服务</p>
+                                    <p>价格</p>
+                                    <p>用户评价</p>
+                                </nav>
+                            </nav>
+                        </nav>
+                        <nav class="hotelContent">
+                            <nav class="hotel1">
+                                <img src="./img/占位图/4.png">
+                                <nav class="hotelIntro">
+                                    <h3>酒店名称</h3>
+                                    <p>位置与交通</p>
+                                    <p>设施与服务</p>
+                                    <p>价格</p>
+                                    <p>用户评价</p>
+                                </nav>
+                            </nav>
+                            <nav class="hotel1">
+                                <img src="./img/占位图/5.png">
+                                <nav class="hotelIntro">
+                                    <h3>酒店名称</h3>
+                                    <p>位置与交通</p>
+                                    <p>设施与服务</p>
+                                    <p>价格</p>
+                                    <p>用户评价</p>
+                                </nav>
+                            </nav>
+                        </nav>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 版权信息 -->
+    <div class="bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h5>按目的搜索</h5>
+                            <p>观光 | 美食 | 购物 | 住宿 | 交通 </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <h5>查询交通路线</h5>
+                            <p>需要查询贵州各地区路线的可点击这里</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h5>产品</h5>
+                            <p>在线客服 | 在线机器人 | 呼叫中心 | 数据大屏</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <h5>帮助</h5>
+                            <p>开发指南 | 下载中心 | 帮助中心 | 更新日志 | 旅游中心 | 个人动态</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h5>联系我们</h5>
+                            <p>电话:4003-000-929 </p>
+                            <p>邮箱:help@qianxing.com</p>
+                            <p>商务合作:hezuo@qianxing.com</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <h5>加入我们</h5>
+                            <p>渠道合作</p>
+                            <p>招贤纳士</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="col-lg-6">
+                        <h5>公众号</h5>
+                        <img src="./img/bottom/黔行天下.jpg">
+                    </div>
+                    <div class="col-lg-6">
+                        <h5>微信联系</h5>
+                        <img src="./img/bottom/微信联系.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom2">
+        <p> @2024 张威13787144292-版权所有</p>
+    </div>
+    <script src="./js/通用.js"></script>
+    <script src="./js/住宿推荐.js"></script>
+</body>
+
+</html>

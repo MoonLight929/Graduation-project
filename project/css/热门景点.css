@@ -1,0 +1,415 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-image: url('../img/背景2.jpg');
+    /* 背景图片不重复 */
+    background-repeat: no-repeat;
+    /* 背景图片位置居中 */
+    background-position: center;
+    /* 背景图片位置固定 */
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.bannerDiv{
+    width: 100%;
+    height: auto;
+    border-top: 50px solid black;
+    /* margin-top: 49px; */
+    /* background-color: antiquewhite; */
+}
+.banner img{
+    width: 100%;
+    /* height: 100%; */
+    margin: 0px auto;
+}
+
+/* 搜索框 */
+.search {
+    display: flex;
+    width: 900px;
+    height: 50px;
+    line-height: 50px;
+    margin: 30px auto;
+}
+
+.search input {
+    flex: 1;
+    height: 50px;
+    line-height: 50px;
+    /* padding和border的值就不会在影响元素的宽高 */
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 0 20px;
+    font-size: 20px;
+    box-shadow: 0 0 4px #c4c4c4;
+}
+
+.search button {
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 30px;
+    border: none;
+    box-sizing: border-box;
+    background-color: #1fab89;
+    font-size: 20px;
+    color: #eeeeee;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    cursor: pointer;
+}
+.big-nav{
+    background-color: white;
+}
+
+/* 插队 */
+.all {
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px auto;
+}
+
+.all-title {
+    width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.all-title p {
+    line-height: 26px;
+}
+
+.nav-all {
+    width: 1300px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.all-con {
+    width: 320px;
+    height: 230px;
+    /* background-color: #c4c4c4; */
+    float: left;
+    position: relative;
+}
+
+.all-img {
+    width: 250px;
+    height: 230px;
+}
+
+.all-img img {
+    width: 250px;
+    height: 100%;
+    /* background-color: #eeeeee; */
+}
+
+.all-text {
+    width: 320px;
+    height: 45%;
+    padding: 10px;
+    line-height: 25px;
+    /* background-color: aquamarine; */
+    position: absolute;
+    bottom: 0;
+    color: white;
+    transition: 0.5s;
+}
+
+.all-text p:first-child {
+    font-size: 22px;
+}
+
+.text1 {
+    background-color: rgba(4, 85, 15, 0.8);
+}
+
+.text2 {
+    background-color: rgba(224, 178, 50, 0.8);
+}
+
+.text3 {
+    background-color: rgba(23, 110, 142, 0.8);
+}
+
+.text4 {
+    background-color: rgba(118, 184, 77, 0.8);
+}
+
+.text1:hover {
+    background-color: rgba(4, 66, 12, 0.9);
+}
+
+.text2:hover {
+    background-color: rgba(189, 148, 37, 0.9);
+}
+
+.text3:hover {
+    background-color: rgba(18, 84, 108, 0.9);
+}
+
+.text4:hover {
+    background-color: rgba(93, 146, 59, 0.9);
+}
+/* 推荐景点 */
+.arrow{
+    width: 900px;
+    margin: 0px auto;
+}
+/* 按钮导航样式 */
+.arrow p{
+    background-image: url('../img/景点/景点-箭头.png');
+    line-height: 50px;
+    padding-left: 35px;
+    font-size: 16px;
+    color: whitesmoke;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+/* 移动上去变背景 */
+#first-arrow p{
+    background-image: url('../img/景点/景点-箭头-移动.png');
+}
+/* 下方内容 */
+.arrow-content{
+    width: 100%;
+    height: auto;
+    background-color:white;
+    padding: 20px 0px;
+    font-family: "宋体";
+    margin-bottom: 20px;
+}
+a-img img{
+    margin: 10px 0px;
+}
+.arrow-one p{
+    font-size: 15px;
+    line-height: 28px;
+}
+/* 默认隐藏，第一个div内容显示 */
+#arrowContent div{
+    display: none;
+}
+#arrowContent div:first-child{
+    display: block;
+}
+/* 查看更多 */
+.arrow-btn{
+    font-size: 13px;
+    padding: 5px 10px;
+    background-color: whitesmoke;
+    border:1px solid grey;
+    float: right;
+}
+.arrow-btn:hover{
+    background-color: rgb(234, 234, 234);
+}
+.arrow-one h3 {
+    font-weight: bolder;
+    line-height: 35px;
+}
+.arrow-one h4{
+    border-top: 1px solid grey;
+    width: 350px;
+    padding-top: 10px;
+    font-weight: bolder;
+}
+
+
+/* 打卡圣地 */
+.vlog-title h1{
+    text-align: center;
+}
+.vlog-nr1{
+    width: 1150px;
+    height: 500px;
+    background-color:#1f4eab;
+    padding: 5px;
+    margin: 20px auto;
+    position: relative;
+    transition: 1s;
+    overflow: hidden;
+}
+.vlog-nr1:hover{
+    background-color: #163980;
+}
+.vlog-left{
+    width: 750px;
+    height: 100%;
+}
+.vlog-left img{
+    width: 750px;
+    height: 100%;
+}
+
+.vlog-right {
+    width: 390px;
+    height: 100%;
+    padding: 20px;
+    color: white;
+    /* background-color: #c4c4c4; */
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.vlog-right,.vlog-right2 p{
+    font-size: 16px;
+    line-height: 30px;
+}
+.vlog-left2 {
+    width: 750px;
+    height: 100%;
+    float: right;
+}
+.vlog-left2 img {
+    width: 750px;
+    height: 100%;
+}
+.vlog-right2 {
+    width: 390px;
+    height: 100%;
+    padding: 20px;
+    color: white;
+    /* background-color: #c4c4c4; */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.txt1{
+    border-bottom: 1px solid white;
+    line-height: 35px;
+    margin-bottom: 10px;
+}
+.svg{
+    width: 40px;
+}
+
+/* 热门景点 */
+
+
+.classify {
+    width: 1200px;
+    height: 600px;
+    /* background-color: antiquewhite; */
+    position: relative;
+    /* padding-top: 5px; */
+    margin: 0px auto;
+    /* border-top: 10px solid white; */
+    background-color: rgb(255, 255, 255);
+    
+}
+.card {
+    overflow: hidden;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}
+.top-right1 {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+}
+
+.top-right2 {
+    position: absolute;
+    top: 0px;
+    right: 305px;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+}
+
+.top-left {
+    /* margin: 5px 5px 0px 5px; */
+    position: absolute;
+    left: 5px;
+}
+
+.mid-right {
+    position: absolute;
+    top: 200px;
+    right: 5px;
+}
+
+.bottom-right1 {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+}
+
+.bottom-right2 {
+    position: absolute;
+    bottom: 10px;
+    right: 305px;
+}
+
+.text {
+    position: absolute;
+    inset: 20px;
+    padding: 0px 10px;
+}
+
+/* .text::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    left: 100%;
+    border-left: 4px solid white;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.6s;
+} */
+
+.text p {
+    font-family: '宋体';
+    transition: 0.35s;
+    opacity: 0;
+}
+
+.text h1 {
+    opacity: 0;
+    font-family: '宋体';
+}
+.text button{
+    background-color:whitesmoke;
+    color: rgb(67, 67, 67);
+    border: none;
+    padding: 5px 10px;
+}
+.text button:hover{
+    background-color: rgb(219, 219, 219);
+    color: black;
+}
+.px1 h1{
+    font-size: 50px;
+    
+}
+.px1 p{
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.card:hover img {
+    opacity: 0.4;
+    transition: 1s;
+}
+
+.card:hover .text h1 {
+    opacity: 1;
+    transform: translate(0%, 0%);
+    /* transition-delay: 0.2s; */
+}
+
+.card:hover .text p {
+    opacity: 0.9;
+}

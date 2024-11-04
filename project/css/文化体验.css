@@ -1,0 +1,208 @@
+/* banner */
+.bannerDiv {
+    width: 100%;
+    height: auto;
+    border-top: 50px solid black;
+    /* margin-top: 49px; */
+    /* background-color: antiquewhite; */
+}
+
+.banner img {
+    width: 100%;
+    /* height: 100%; */
+    margin: 0px auto;
+}
+
+.big-nav {
+    background-color: white;
+}
+
+/* 搜索框 */
+.search {
+    display: flex;
+    width: 900px;
+    height: 50px;
+    line-height: 50px;
+    margin: 30px auto;
+}
+
+.search input {
+    flex: 1;
+    height: 50px;
+    line-height: 50px;
+    /* padding和border的值就不会在影响元素的宽高 */
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 0 20px;
+    font-size: 20px;
+    box-shadow: 0 0 4px #c4c4c4;
+}
+
+.search button {
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 30px;
+    border: none;
+    box-sizing: border-box;
+    background-color: #1fab89;
+    font-size: 20px;
+    color: #eeeeee;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 0 4px #c4c4c4;
+}
+
+/* 总结 */
+.conclude {
+    text-align: center;
+    line-height: 30px;
+}
+
+
+/* 大致分类 */
+.cultrueTitle> h3{
+    text-align: center;
+}
+.cultrueTitle hr{
+    border: 2px solid black;
+    margin: 30px 0 20px 0;
+}
+/* 分类导航 */
+.classifyNav{
+    display: flex;
+    justify-content:space-around;
+    user-select: none;
+    margin-bottom: 20px;
+}
+.classifyNav p{
+    cursor: pointer;
+}
+.classifyNav p:first-child{
+    font-weight: bold;
+}
+.content1{
+    display: none;
+    margin: 10px 0px;
+}
+.content1:first-child{
+    display: block;
+}
+.nr{
+    display: flex;
+    justify-content: space-between;
+}
+.nr a{
+    text-decoration: none;
+}
+/* 左侧内容 */
+.left{
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.left1{
+    width: 35%;
+    height: auto;
+    overflow: hidden;
+}
+.left1 img{
+    width: 100%;
+    height: 600px;
+}
+.left2{
+    width: 64%;
+    height: 600px;
+    position: relative;
+    padding:1px 40px;
+}
+.left2 button{
+    border: none;
+    background-color: skyblue;
+    padding: 3px 8px;
+    color: white;
+}
+.leftTitle{
+    margin: 40px 0px 30px 0px;
+}
+.left2 .leftTitle p{
+    line-height: 26px;
+    font-family: "幼圆";
+    font-weight: 600;
+    font-size: 28px;
+}
+.left2>p{
+    line-height: 26px;
+    letter-spacing: 1px;
+}
+.see{
+    display: block;
+    float: right;
+}
+.leftImg{
+    position: absolute;
+    display: flex;
+    width: 110%;
+    height: 120px;
+    justify-content: space-between;
+    left: -20%;
+    margin-top: 50px;
+}
+.leftImg img{
+    width: 130px;
+    height: 130px;
+    box-shadow: 0 0 3px #000000;
+}
+.left2 .more{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+
+
+
+/* 右侧内容 */
+.right{
+    width: 29%;
+    height: auto;
+}
+.rightNr{
+    width: 100%;
+    height: 19%;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.right1{
+    width: 55%;
+    height: 100%;
+    padding: 15px 0px;
+}
+.right1 p{
+    font-size: 14px;
+    cursor: pointer;
+}
+.right1 p:hover{
+    font-weight: bold;
+}
+.tag{
+    color: rgb(47, 47, 159);
+}
+.right2{
+    width: 44%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right2 img{
+    width: 100px;
+    height: 100px;
+}

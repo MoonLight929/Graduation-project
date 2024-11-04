@@ -1,0 +1,156 @@
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height:740px;
+	margin: 0;
+}
+.beijing{
+	z-index: -1;
+	width: 100%;			/*自适应屏幕*/
+	position: absolute;
+	filter: blur(2px);			/*模糊*/
+}
+.deng{
+	position: relative;
+	display: flex;
+	/*视域*/
+	perspective: 1200px;
+	transform-style: preserve-3d;
+}
+.neirong{
+	width: 300px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: whitesmoke;
+	border-radius: 5px 0 0 5px;
+}
+.neirong:nth-last-child{
+	border-radius: 0 5px 5px 0;
+}
+.neirong img{
+	width: 95%;
+	margin-bottom: 15px;
+}
+.neirong span{
+	font-size: 14px;
+	color: grey;
+}
+.biaodan{
+	width: 300px;
+	height: 400px;
+	position: absolute;
+	left: 0;
+	transition: .5s;
+	transform-origin: right;
+}
+.biaodan .login{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-image: linear-gradient(to right,#48c6ef 0%,#6f86d6 200%);
+	border-radius: 5px 0 0 5px;
+}
+.biaodan  .register{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-image: linear-gradient(to right,#48c6ef -100%,#6f86d6 100%);
+	border-radius: 0 5px 5px 0;
+	transform: rotateY(180deg);
+}
+.biaodan  form.disappear {
+	display: none;
+}
+.biaodan h1{
+	margin: 0px 0 25px 0;
+	/*大写*/
+	text-transform: uppercase;		/*文本全部大写*/
+	color: white;
+	letter-spacing: 5px;
+}
+.biaodan input{
+	background-color: transparent;
+	width: 70%;
+	color:white;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid rgba(255,255,255,0.7);
+	padding: 5px 0;
+	margin: 8px 0;
+	text-indent: 5px;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+.biaodan input::placeholder{
+	color: white;
+}
+.biaodan button[type="submit"]{
+	width: 70%;
+	height: 32px;
+	margin: 30px auto 10px;
+	font-size: 14px;
+	color: white;
+	border: none;
+	border-radius: 16px;
+	background-color: rgba(255,255,255,0.2);
+	transition: .4s;
+}
+.biaodan button[type="submit"]:hover{
+	letter-spacing: 3px;
+	background-color: white;
+	color: black;
+}
+.biaodan .control{
+	color: white;
+	margin: 5px;
+	font-size: 13px;
+}
+.biaodan .control a{
+	color: white;
+	margin: 0 5px;
+	letter-spacing: 1px;
+}
+.biaodan .control a:hover{
+	color: black;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+.control a{
+	font-weight: bold;
+	transition: 0.4s;
+}
+.control span{
+	letter-spacing: 1px;
+}
+
+/* 返回首页按钮 */
+.return{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+.return button{
+	border:none;
+	background-color: rgba(0,0,0,0.3);
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 1px;
+	transition: 0.4s;
+}
+.return button:hover{
+	background-color: rgba(0, 0, 0, 0.5);
+}
